@@ -18,7 +18,7 @@ const Popular = () => {
 return(
    
 <div className="flex flex-wrap justify-evenly bg-gray-700">
-
+<Navbar />
                             {Movies.map((movie) => (
                                 <MovieCard movie={movie}/>
                             ))}

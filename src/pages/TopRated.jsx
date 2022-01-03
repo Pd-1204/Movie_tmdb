@@ -2,6 +2,7 @@ import React from "react";
 import axios from "axios";
 import MovieCard from "../Components/MovieCard";
 import { useEffect, useState } from "react";
+import Navbar  from "../Components/Navbar";
 
 const TopRated = () => {
     const [Movies, setMovies] = useState([]);
@@ -17,7 +18,7 @@ const TopRated = () => {
 return(
    
 <div className="flex flex-wrap justify-evenly bg-gray-700">
-
+<Navbar />
                             {Movies.map((movie) => (
                                 <MovieCard movie={movie}/>
                             ))}
