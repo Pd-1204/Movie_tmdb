@@ -3,6 +3,7 @@ import Navbar from "../Components/Navbar";
 import { useEffect} from "react";
 import axios from "axios";
 import MovieCard from "../Components/MovieCard";
+import Latest from "../pages/Latest";
 
 async function getMovies(pageNo) {
     const res = await axios.get(`https://api.themoviedb.org/3/trending/movie/day?api_key=${process.env.REACT_APP_API_KEY}&page=${pageNo}`);
